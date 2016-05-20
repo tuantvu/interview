@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(i);
         }
         else if (v.getId() == R.id.link_challenge_2) {
-            Intent i = new Intent(this, Challenge1Activity.class);
+            Intent i = new Intent(this, Challenge2Activity.class);
             startActivity(i);
         }
     }

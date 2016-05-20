@@ -10,34 +10,29 @@
     tools:context=".Challenge1Activity">
 
     <!--
-        Instructions: Create a layout that
+        Instructions: Create layout from Challenge_1_Example.png
+        Specs:
+        1. Title
+            a. id: title
+            b. centered horizontally and vertically
+            c. height = 48dp
+            d. large text
+        2. Divider
+            a. height = 2dp
+            b. id = divider
+        3. Floating button
+            a. id = fab
+            b. margins = 16dp
+        4. Recycler View
+            a. id = list_view
+        5. Recycler View Items
+            a. Overall padding = 16dp
+            b. Icon: any star
+            c. Icon width: 25%
+            d. Name: id=text_name & Text Size: Medium
+            e. Age: id=text_age & Text Size: Small
+            f. Name & Age width: 75%
+            g. Icon and Text centered vertically
     -->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="The Title"
-        android:id="@+id/title"
-        android:gravity="center_vertical|center_horizontal" />
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="2dp"
-        android:layout_below="@+id/title"
-        android:background="@android:color/holo_red_light"
-        android:id="@+id/divider" />
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/divider"
-        android:id="@+id/list_view" />
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_input_add"
-        android:id="@+id/fab"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="16dp" />
 </RelativeLayout>
